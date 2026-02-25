@@ -52,3 +52,14 @@ Unlike TCP, UDP does not include:
 - Flags
 
 UDP is simple and lightweight.
+## Application-Level Reliability
+
+Although UDP itself provides no reliability, some application protocols implement their own reliability mechanisms.
+
+Example: DNS
+
+- DNS uses a Transaction ID to match responses with requests.
+- If a response is not received within a timeout, the client retransmits the query.
+- Large DNS responses may switch to TCP if needed.
+
+This shows that reliability can be implemented at the application layer instead of the transport layer.
