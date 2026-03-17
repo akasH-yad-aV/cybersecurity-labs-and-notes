@@ -1,2 +1,0 @@
-
-#this folder contain screenshots
