@@ -41,7 +41,7 @@ Locate FIN and ACK packets at the end of the TCP stream.
 
 ### Client FIN (Connection Termination Initiation)
 
-![FIN 1](screenshots/TCP_FIN_1.png)
+![FIN 1](screenshots/02_TCP_FIN_1.png)
 
 The client initiates termination.
 
@@ -55,7 +55,7 @@ This indicates the client has finished sending data.
 
 ### Server FIN (Acknowledgment + Termination)
 
-![FIN 2](screenshots/TCP_FIN_2.png)
+![FIN 2](screenshots/02_TCP_FIN_2.png)
 
 The server responds with a combined FIN and ACK.
 
@@ -69,7 +69,7 @@ The server acknowledges the client’s FIN and simultaneously signals its own te
 
 ### Final ACK
 
-![ACK](screenshots/TCP_Termination_ACK.png)
+![ACK](screenshots/02_TCP_Termination_ACK.png)
 
 The client sends the final acknowledgment.
 
@@ -83,7 +83,7 @@ This completes the connection termination.
 
 ### Packet Details
 
-![TCP Details](screenshots/TCP_Termination_ACK.png)
+![TCP Details](screenshots/02_TCP_Termination_ACK.png)
 
 - Sequence Number tracks the byte stream.  
 - Acknowledgment Number confirms received data.  
@@ -123,16 +123,32 @@ The difference occurs due to **ACK + FIN combination**, which is common in real-
 ---
 ### Abrupt Termination (RST)
 
-In some scenarios, TCP connections may terminate abruptly using the RST flag.
+![RST](screenshots/03_TCP_RST.png)
 
-RST packets are observed when:
-- A connection is forcefully terminated
-- An application crashes
-- Unexpected network conditions occur
+The TCP connection is terminated abruptly using a Reset (RST) packet.
 
-Unlike FIN-based termination, RST immediately closes the connection without completing the handshake.
+- Flags: RST, ACK  
+- Sequence Number = X  
+- Acknowledgment Number = Y  
 
-Note: In this lab environment, consistent reproduction of RST after an established connection was not reliable due to system-level TCP handling. However, the behavior is important for real-world analysis.
+The RST packet immediately closes the connection without completing the FIN-based termination process.  
+Unlike graceful termination, no exchange of FIN and ACK packets occurs.
+
+This indicates that the connection was forcefully terminated, and no further communication is possible between the client and server.
+
+---
+
+## Key Observations
+
+- RST causes immediate termination of the TCP connection  
+- No graceful shutdown sequence is followed  
+- Any remaining data in transit is discarded  
+
+---
+
+## Conclusion
+
+RST-based termination represents an abrupt closure of a TCP session, where the connection is immediately reset without following the normal termination handshake.
 
 ---
 
