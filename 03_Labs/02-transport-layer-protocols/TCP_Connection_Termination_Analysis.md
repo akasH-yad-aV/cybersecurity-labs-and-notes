@@ -83,7 +83,7 @@ This completes the connection termination.
 
 ### Packet Details
 
-![TCP Details](screenshots/TCP_Termination_Details.png)
+![TCP Details](screenshots/TCP_Termination_ACK.png)
 
 - Sequence Number tracks the byte stream.  
 - Acknowledgment Number confirms received data.  
