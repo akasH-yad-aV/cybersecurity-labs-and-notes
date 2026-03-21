@@ -40,7 +40,7 @@ Locate SYN, SYN-ACK, and ACK packets.
 
 ### SYN Packet
 
-![SYN](screenshots/TCP_SYN.png)
+![SYN](screenshots/01_TCP_SYN.png)
 
 The client initiates the connection.
 
@@ -52,7 +52,7 @@ The client initiates the connection.
 
 ### SYN-ACK Packet
 
-![SYN-ACK](screenshots/TCP_SYN_ACK.png)
+![SYN-ACK](screenshots/01_TCP_SYN_ACK.png)
 
 The server responds to the SYN request.
 
@@ -64,7 +64,7 @@ The server responds to the SYN request.
 
 ### ACK Packet
 
-![ACK](screenshots/TCP_ACK.png)
+![ACK](screenshots/01_TCP_ACK.png)
 
 The client completes the handshake.
 
@@ -76,7 +76,7 @@ The client completes the handshake.
 
 ### Packet Details
 
-![TCP Details](screenshots/TCP_Details.png)
+![TCP Details](screenshots/01_TCP_Details.png)
 
 Key fields observed:
 
