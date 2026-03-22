@@ -72,7 +72,7 @@ world
 
 ### First Data Packet
 
-![Data 1](screenshots/01_TCP_Data_1.png)
+![Data 1](screenshots/03_TCP_Data_1.png)
 
 The client sends the first segment of data to the server.
 
