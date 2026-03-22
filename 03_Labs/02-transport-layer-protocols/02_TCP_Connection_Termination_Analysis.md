@@ -123,7 +123,7 @@ The difference occurs due to **ACK + FIN combination**, which is common in real-
 ---
 ### Abrupt Termination (RST)
 
-![RST](screenshots/03_TCP_RST.png)
+![RST](screenshots/02_TCP_RST.png)
 
 The TCP connection is terminated abruptly using a Reset (RST) packet.
 
