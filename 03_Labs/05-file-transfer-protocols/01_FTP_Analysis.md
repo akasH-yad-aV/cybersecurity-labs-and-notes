@@ -120,7 +120,7 @@ Observed commands:
 
 ### 3. FTP Data Channel (Download - RETR)
 
-![FTP Data Channel](screenshots/01_FTP_Data Channel_Download.png)
+![FTP Data Channel](screenshots/01_FTP_Data_Channel_Download.png)
 
 - Packets show TCP 3-way handshake (SYN, SYN-ACK, ACK)  
 - Separate port used for data transfer  
