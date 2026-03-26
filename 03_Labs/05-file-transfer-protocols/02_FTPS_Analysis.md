@@ -100,7 +100,7 @@ After this, the protocol shifts from FTP to TLS.
 
 ### 3. TLS Handshake (Control Channel)
 
-![TLS Transition](screenshots/02_FTPS_Control_Channel_TLS_Transition.png)
+![TLS Transition](screenshots/02_FTPS_TLS_Handshake.png)
 
 - TLS handshake begins immediately after AUTH TLS  
 - ClientHello followed by ServerHello observed  
@@ -131,7 +131,7 @@ Authentication occurs in this phase but cannot be directly observed.
 
 ### 5. Data Channel Establishment
 
-![Data Channel TCP](screenshots/02_FTPS_Data_Channel_TCP_Connection.png)
+![Data Channel TCP](screenshots/02_FTPS_Data_Channel_TCP_Handshake.png)
 
 - New TCP connection initiated to high-numbered port  
 - TCP handshake observed  
@@ -160,7 +160,7 @@ Control and data channels are encrypted independently.
 
 ### 7. Encrypted Data Transfer
 
-![Encrypted Data](screenshots/02_FTPS_Encrypted_Data_Transfer.png)
+![Encrypted Data](screenshots/02_FTPS_Encrypted_Data.png)
 
 - Continuous TLS Application Data packets observed  
 - No readable file content  
