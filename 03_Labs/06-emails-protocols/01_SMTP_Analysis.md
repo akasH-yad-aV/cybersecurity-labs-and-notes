@@ -133,7 +133,7 @@ Unlike HELO, it enables extended features such as:
 
 ### 3. MAIL FROM (Envelope Sender)
 
-![MAIL FROM](screenshots/01_SMTP_MAIL_FROM.png)
+![MAIL FROM](screenshots/01_SMTP_MAIL_TO.png)
 
 - `MAIL FROM:<test@lab.local>`  
 - Server responds with `250 OK`  
@@ -180,7 +180,7 @@ This is the final routing decision point before data transmission.
 
 ### 5. DATA Command (Message Transition)
 
-![DATA](screenshots/01_SMTP_DATA_Command.png)
+![DATA](screenshots/01_SMTP_DATA_COMMAND.png)
 
 - Client sends `DATA`  
 - Server responds with `354 Start mail input`  
@@ -204,7 +204,7 @@ After this point:
 
 ### 6. Email Content (Message Body)
 
-![Email Content](screenshots/01_SMTP_Email_Content.png)
+![Email Content](screenshots/01_SMTP_EMAIL_Content.png)
 
 - Headers:
   - Subject  
